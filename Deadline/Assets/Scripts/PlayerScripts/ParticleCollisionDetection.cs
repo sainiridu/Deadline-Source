@@ -63,15 +63,15 @@ public class ParticleCollisionDetection : MonoBehaviour
                 //colObject = other;
 
                     
-                if (this.transform.parent.root.name == "Player1(Clone)")
+                if (this.transform.parent.root.name == "Player1")
                 {
-                    killer_Name = "B L U E";
-                    killed_Name = "I T S E L F";
+                    killer_Name = "    B L U E    ";
+                    killed_Name = "    I T S E L F    ";
                 }
-                else if(this.transform.parent.root.name == "Player2(Clone)")
+                else if(this.transform.parent.root.name == "Player2")
                  {
-                    killer_Name = "R E D";
-                    killed_Name = "I T S E L F";
+                    killer_Name = "    R E D    ";
+                    killed_Name = "    I T S E L F    ";
                 }
 
 
@@ -94,24 +94,24 @@ public class ParticleCollisionDetection : MonoBehaviour
                 other.gameObject.GetComponentInParent<PlayerController>().enabled = false;
                 //colObject = other;
 
-                 if (this.transform.parent.root.name == "Player1(Clone)")
+                 if (this.transform.parent.root.name == "Player1")
                 {
-                    killer_Name = "B L U E";
+                    killer_Name = "    B L U E    ";
                 }
                    
-                else if(this.transform.parent.root.name == "Player2(Clone)")
+                else if(this.transform.parent.root.name == "Player2")
                  {
-                    killer_Name = "R E D";
+                    killer_Name = "    R E D    ";
                  }
 
-                 if(other.transform.root.name == "Player1(Clone)")
+                 if(other.transform.root.name == "Player1")
                  {
-                     killed_Name = "B L U E";
+                     killed_Name = "    B L U E    ";
                  }
 
-                 else if(other.transform.root.name == "Player2(Clone)")
+                 else if(other.transform.root.name == "Player2")
                  {
-                     killed_Name = "R E D";
+                     killed_Name = "    R E D    ";
                  }
 
                 killer_Name = this.transform.root.name;
